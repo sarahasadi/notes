@@ -35,7 +35,7 @@ Delete and recreate the traefik-configs configmap in the traefik-internal namesp
 kubectl -n traefik-internal delete cm traefik-configs
 kubectl -n traefik-internal create cm traefik-configs --from-file traefik-configs.yaml
 ```
-used these values in values.yaml
+Used these values in values.yaml
 ```
 volumes:
   - name: test-local
